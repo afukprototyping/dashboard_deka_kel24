@@ -498,8 +498,8 @@ with tabs[1]:
 
     st.dataframe(
         branch_kpi.style
-            .applymap(color_nps, subset=["NPS_Score"])
-            .applymap(lambda v: color_score(v, "CSI"), subset=["CSI_Mean", "CLI_Mean"])
+            .map(color_nps, subset=["NPS_Score"])
+            .map(lambda v: color_score(v, "CSI"), subset=["CSI_Mean", "CLI_Mean"])
             .format({"NPS_Score": "{:+.1f}", "CSI_Mean": "{:.2f}", "CLI_Mean": "{:.2f}",
                      "CES_Mean": "{:.2f}", "Overall_Score": "{:.3f}"}),
         use_container_width=True, height=420
