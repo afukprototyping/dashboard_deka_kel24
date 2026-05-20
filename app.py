@@ -951,3 +951,4 @@ with tabs[5]:
         Or set the environment variable before running:
         ```bash
         GEMINI_API_KEY=AIzaSy... streamlit run app.py
+        """)
