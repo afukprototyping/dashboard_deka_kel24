@@ -286,7 +286,7 @@ with tab3:
             st.info("Data umpan balik tidak mencukupi untuk rentang waktu ini.")
 
     with c2:
-        st.markdown("#### Asisten Data Analis AI")
+        st.markdown("#### Asisten AI")
         
         if not ai_enabled:
             st.warning("Integrasi AI dinonaktifkan. Harap masukkan GEMINI_API_KEY untuk berinteraksi dengan data.")
@@ -323,7 +323,7 @@ with tab3:
                         st.markdown(message["content"])
 
             # Input obrolan pengguna
-            if prompt := st.chat_input("Tanyakan sesuatu terkait performa data..."):
+            if prompt := st.chat_input("Tanyakan sesuatu terkait data..."):
                 # Simpan dan tampilkan pesan user
                 st.session_state.messages.append({"role": "user", "content": prompt})
                 with chat_container:
