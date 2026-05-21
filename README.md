@@ -1,6 +1,4 @@
-# Dashboard Deka Kelompok 24
-
-# Customer Experience Dashboard Always Healthy Hospital
+# Kelompok 24 - Customer Experience Dashboard Always Healthy Hospital
 
 Streamlit dashboard for visualising patient satisfaction survey data across 15 hospital branches in Indonesia (Jan–Dec 2025, 3,600 respondents).
 
