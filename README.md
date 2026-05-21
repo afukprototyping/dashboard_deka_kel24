@@ -1,28 +1,17 @@
 # Dashboard Deka Kelompok 24
 
-# 🏥 Always Healthy Hospital — Customer Experience Dashboard
+# Customer Experience Dashboard Always Healthy Hospital
 
 Streamlit dashboard for visualising patient satisfaction survey data across 15 hospital branches in Indonesia (Jan–Dec 2025, 3,600 respondents).
 
-## 🚀 Run Locally
+## Run Locally
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## ☁️ Deploy to Streamlit Cloud
-
-1. Push this repo to GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io) → New App
-3. Select your repo, branch `main`, file `app.py`
-4. Add `ANTHROPIC_API_KEY` in **Settings → Secrets**:
-
-```toml
-ANTHROPIC_API_KEY = "sk-ant-..."
-```
-
-## 📊 Features
+## Features
 
 | Feature | Description |
 |---|---|
@@ -35,12 +24,12 @@ ANTHROPIC_API_KEY = "sk-ant-..."
 | **AI Insights** | Claude-powered executive summary, branch improvement plan, action plans |
 | **Export** | Download filtered data as CSV, download AI insights as TXT |
 
-## 📁 Data
+## Data
 
 - `data.csv` — survey data (semicolon-delimited)
 - Columns: `Datetime`, `Branch`, `Gender`, `Age`, `NPS` (0–10), `CSI` (1–5), `Loyalty` (1–5), `CES` (1–5), 10 touchpoint scores, `Improvement_Feedback`
 
-## 🧮 KPI Formulas
+## KPI Formulas
 
 - **NPS** = (Promoters% − Detractors%) × 100, where Promoters = NPS 9–10, Detractors = NPS 0–6
 - **CSI** = Mean of CSI score (1–5)
