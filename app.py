@@ -283,7 +283,7 @@ with tab3:
                         Top complaint themes: {', '.join(complaint_counts.index[:3]) if not complaint_counts.empty else 'N/A'}
                         """)
                         genai.configure(api_key=api_key_env)
-                        model = genai.GenerativeModel("gemini-pro")
+                        model = genai.GenerativeModel("gemini-2.5-flash")
                         response = model.generate_content(
                             f"Act as a CX Director. Based on this brief data: {summary}. Write a concise 3-bullet point executive action plan focusing strictly on operations and process improvement. No fluff, professional tone."
                         )
