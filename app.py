@@ -19,10 +19,10 @@ import plotly.graph_objects as go
 import streamlit as st
 
 # ──────────────────────────────────────────────
-# PENGATURAN HALAMAN & TEMA GELAP (DARK MODE)
+# PENGATURAN HALAMAN & TEMA GELAP
 # ──────────────────────────────────────────────
 st.set_page_config(
-    page_title="Dasbor CX | Always Healthy Hospital",
+    page_title="Always Healthy Hospital KPI Dashboard",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -166,11 +166,11 @@ if df.empty:
 # ──────────────────────────────────────────────
 # TATA LETAK UTAMA (MAIN LAYOUT)
 # ──────────────────────────────────────────────
-st.markdown("## Dasbor Pengalaman Pelanggan")
+st.markdown("## Customer Experience Dashboard")
 st.markdown(f"**Periode: {MONTH_LABELS.get(selected_months[0], selected_months[0])} - {MONTH_LABELS.get(selected_months[-1], selected_months[-1])} 2025** | Total Responden: {len(df):,} | Jumlah Cabang: {df['City'].nunique()}")
 st.markdown("---")
 
-tab1, tab2, tab3 = st.tabs(["Ringkasan Eksekutif", "Analisis Performa", "Asisten AI & Umpan Balik"])
+tab1, tab2, tab3 = st.tabs(["Executive Summary", "Analisis Performa", "Asisten AI & Feedback Pelanggan"])
 
 # ═══════════════════════════════════════════════
 # TAB 1 — RINGKASAN EKSEKUTIF
